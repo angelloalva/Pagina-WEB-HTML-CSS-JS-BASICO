@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gelo Adacemy</title>
+</head>
+<body>
+    <div class="nav-container">
+        <nav class="navbar">
+            <h1 id="navbar-logo">Gelo</h1>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-links">Home</a></li>
+                <li><a href="#" class="nav-links">About</a></li>    
+                <li><a href="#" class="nav-links">Projects</a></li>    
+                <li> <a href="#" class="nav-links nav-links-btn">Login</a></li>   
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="main-container">
+            <div class="main-content">
+                <h1>HTML Basics!</h1>
+                <P>Aprende Haciendo, el punto de inicio en tu carrera como programador!</P>
+                <button class="main-btn">
+                    <a href="">Let's GO!</a>
+                </button>
+            </div>
+            <div class="main-img-container">
+                <img id="main-img" src="images/portada.svg" alt="geloacademy">
+            </div>
+        </div>
+
+    </div>
+    <div class="modal" id="email-modal">
+        <div class="modal-content">
+            <span class="close-btn">
+                &times
+            </span>
+            <div class="modal-content-left">
+                <img src="images/contact.svg" id="modal-img" alt=""/>
+            </div>
+            <div class="modal-content-right">
+               <form action="/" method="GET" class="modal-form" id="form">
+                    <h1>Te avisaremos cuando publiquemos nuevos Cursos</h1>
+                    <div class="form-validation">
+                        <input type="text" name="name" id="name" placeholder="digita algo" class="modal-input">
+                        <p>Error Message</p>
+                    </div>
+                    <div class="form-validation">
+                        <input type="email" name="email" id="email" class="modal-input">
+                        <p>Error Message</p>
+                    </div>
+                    <div class="form-validation">
+                        <input type="password" name="password" id="password" class="modal-input">
+                        <p>Error Message</p>
+                    </div>
+                    <input type="submit" class="modal-btn" value="Sign In">
+                    <span class="modal-input-login">
+                        Tienes Cuenta? <a href="#" >Login</a>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer><p>Design By Gelo - 2021</p></footer>
+    <script src="app.js"></script>
+</body>
+</html>
